@@ -1,0 +1,8 @@
+syntax: glob
+*.pyc
+*.pyo
+*.db
+.DS_Store
+.coverageg
+syntax: regexp
+^static/

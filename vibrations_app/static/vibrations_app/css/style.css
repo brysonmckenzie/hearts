@@ -1,0 +1,838 @@
+/* html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+} */
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+:focus {
+    outline: 0;
+}
+
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    overflow-x: hidden;
+    /* margin-top: 75px !important; */
+}
+
+nav {
+    width: 100%;
+    position: fixed !important;
+    z-index: 1;
+    top: 0;
+    background-image: url(/static/vibrations_app/images/abstract_background1.jpg)!important;
+    background-size: cover;
+    background-position: center left;
+    color: white;
+}
+
+@font-face {
+    font-family: Wilderness;
+    src: url(/static/vibrations_app/fonts/Wilderness.ttf)
+}
+
+.bg-light {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.nav-vibes {
+    font-size: 40pt;
+    text-transform: uppercase;
+    font-family: Wilderness;
+    font-weight: normal;
+    margin: auto;
+}
+
+.home-back {
+    border-bottom: 1px solid white;
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    /* width: 100%; */
+    position: relative;
+}
+
+.sticky {
+    background: rgba(0, 0, 0, 0.5)!important;
+}
+
+.home-back::after {
+    content: '';
+    background: url(/static/vibrations_app/images/main-back3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1
+}
+
+.start {
+    /* background: #342F2F; */
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding: 40px 20px 40px 20px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 20pt;
+}
+
+#video {
+    background: #000000;
+    width: 100%;
+    height: 100%;
+}
+
+.media-title {
+    font-family: Wilderness;
+    text-align: center;
+    color: white;
+}
+
+.media-title h1 {
+    font-size: 150pt;
+}
+
+#serve {
+    /* display: inline; */
+    font-size: 12pt;
+    /* margin-bottom: 100px; */
+    /* position: relative; */
+    /* bottom: 0; */
+    color: white;
+}
+
+#serve li {
+    display: inline;
+    /* margin-left:10px; */
+}
+
+.bottom-content {
+    /* height: 300px; */
+}
+
+.frontpage-slide {
+    /* background: blue; */
+}
+
+#btn-start {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#marketing {
+    float: right;
+    margin-left: 2em;
+    margin-bottom: 0.5em;
+    shape-outside: url(/static/vibrations_app/images/services.png)
+}
+
+#carousel {
+    /* margin-left: 20px; */
+    /* padding: 
+    25px 25px 0px 25; */
+    height: 90% !important;
+    /* width:  */
+    /* position: absolute; */
+    display: block;
+    /* top: 50%; */
+    /* left:50%; */
+    /* transform: translateY(-50%); */
+    /* opacity: 0.5; */
+    box-shadow: 0px 0px 40px;
+    padding-left: 20px;
+}
+
+.media-left {
+    margin-left: 50px;
+}
+
+.media-txt {
+    font-family: 'Abel', sans-serif;
+    padding: 0px 25px 0px 25px;
+    color: white;
+}
+
+.band {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: relative;
+    display: block;
+    border-top: white 2px solid;
+}
+
+.band::after {
+    content: '';
+    background-image: url(/static/vibrations_app/images/band.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.media-txt h1 {
+    text-align: center;
+    font-size: 28pt;
+}
+
+.media-txt p {
+    font-size: 20pt;
+}
+
+video {
+    /* position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 200px;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1; */
+    width: 100%;
+    height: 600px;
+    padding: 0;
+    display: block;
+    /* position: relative; */
+    box-shadow: 0px 0px 40px black;
+    margin-top: 50px;
+}
+
+.w-100 {
+    /* height: 300px; */
+    height: 100%;
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.vcenter {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#footer-logo {
+    width: 70%;
+}
+
+.nav-item a {
+    color: white !important;
+}
+
+.carousel-inner>.active, .carousel-inner>.next, .carousel-inner>.prev {
+    width: 100%!important;
+    height: 100%!important;
+}
+
+.fashion-text {
+    font-family: 'Abel', sans-serif;
+}
+
+.fashion-text h1 {
+    color: white;
+    margin-left: 40%;
+}
+
+.fashion-text p {
+    color: #6d1c6d;
+    margin-left: 50%;
+    font-size: 20pt;
+}
+
+.fashion-text p::before {
+    content: open-quote;
+}
+
+.fashion-text p::after {
+    content: close-quote;
+}
+
+.fashion-text span {
+    font-family: Wilderness;
+    font-size: 100pt;
+}
+
+.test {
+    font-family: 'Abel', sans-serif;
+    margin-top: 10px;
+    padding: 20px 10px 20px 10px;
+}
+
+.test p {
+    font-size: 8pt;
+}
+
+.test p::before {
+    content: open-quote;
+}
+
+.test p::after {
+    content: close-quote;
+}
+
+.to-do {
+    text-align: center;
+    padding: 75px 0px 75px 0px;
+    /* display: inline-block */
+}
+
+.to-do img {
+    width: 95%;
+}
+
+.to-do li {
+    text-align: center;
+    list-style: none
+}
+
+.to-do h5 {
+    /* margin-bottom: 50px; */
+    font-size: 30pt;
+    color: #004085
+}
+
+#play {
+    color: red;
+    font-size: 60pt;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+/* new section to revamp top section */
+
+/* video {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 100%;
+    min-width: 100%;
+} */
+
+.vid-box {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 400px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.vid-right {
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100
+}
+
+.text {
+    z-index: 2;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.amanie-profile {
+    position: relative;
+    top: 0
+}
+
+.profile {
+    /* background: yellow; */
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid white;
+}
+
+.good-l {
+    width: 100%;
+    position: relative;
+    top: 50%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+}
+
+#pro-pic {
+    height: 400px;
+    height: 400px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    margin-top: 30px;
+    box-shadow: 0px 0px 90px rebeccapurple;
+}
+
+.pro-text {
+    color: white;
+    font-family: 'Abel', sans-serif;
+    width: 50%;
+}
+
+.pro-text h1 {
+    /* text-align: center; */
+    font-size: 40pt;
+    margin-bottom: 75px;
+}
+
+.pro-text h4 {
+    /* text-align: center; */
+    font-size: 22pt;
+    margin-bottom: 50px;
+}
+
+.pro-text h4::before {
+    content: open-quote;
+}
+
+.pro-text h4::after {
+    content: close-quote;
+}
+
+.pro-text img {
+    width: 75%;
+    /* position: relative; */
+    /* transform: translateX(-50%); */
+    left: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.fashion {
+    background: rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: block;
+    padding-bottom: 50px;
+}
+.fam{
+    text-align: center;
+}
+
+.fashion::after {
+    background-image: url(/static/vibrations_app/images/fashion-texture.jpg);
+    background-attachment: fixed;
+    content: '';
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.name {
+    font-family: Wilderness;
+    margin-top: 30px;
+    font-size: 100pt;
+}
+
+.view {
+    padding: 20px;
+    background-color: lightslategray;
+    display: block;
+    padding: 10px 10px 10px 10px;
+    font-family: 'Abel', sans-serif;
+    color: white;
+    text-decoration: none;
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    font-size: 20pt;
+}
+
+.view:link {
+    text-decoration: none;
+}
+
+.view:hover {}
+
+.fam {
+    font-family: Wilderness;
+    font-size: 150px;
+    color: white;
+}
+
+.sexy1 {
+    margin-top: 50px;
+}
+
+.box {
+    box-shadow: 5px;
+    border: 1px solid black;
+    width: 400px;
+    height: 100%;
+    padding: 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.dark {
+    /* background-position: fixed;
+    background-repeat: no-repeat; */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* background-image: url('/static/profile_app/images/background/damask.jpg'); */
+    /* padding: 60px 0px 100px 0px; */
+    /* opacity: 0.8; */
+}
+
+#education h1 {
+    width: 100%;
+    text-align: center;
+    top: 0vh;
+    color: #fff;
+    font-family: 'Abel', sans-serif;
+    letter-spacing: .7em;
+    font-size: 20pt;
+    font-weight: normal;
+    opacity: .8;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.school {
+    padding: 0px 50px 0px 50px;
+    width: 100%;
+    text-align: center;
+    top: 0vh;
+    color: #fff;
+    font-family: 'Abel', sans-serif;
+    letter-spacing: .7em;
+    font-size: 20pt;
+    font-weight: normal;
+    opacity: .8;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.study {
+    padding: 0px 50px 0px 50px;
+    width: 100%;
+    color: #fff;
+    font-family: 'Abel', sans-serif;
+    /* letter-spacing: .7em; */
+    font-size: 14pt;
+    font-weight: normal;
+    opacity: .8;
+    /* text-transform: uppercase; */
+    margin-top: 20px;
+    text-align: center;
+}
+
+.desc {
+    padding: 0px 50px 0px 50px;
+    width: 100%;
+    color: #fff;
+    font-family: 'Abel', sans-serif;
+    /* letter-spacing: .7em; */
+    font-size: 14pt;
+    font-weight: normal;
+    /* opacity: .8; */
+    /* text-transform: uppercase; */
+    margin-top: 16px;
+    display: inline-block;
+    /* margin-left: 100px; */
+    /* line-height: 150%; */
+    text-align: center;
+}
+
+.school>h1 {
+    width: 980px;
+    color: #fff;
+    font-family: 'Abel', sans-serif;
+    /* letter-spacing: .7em; */
+    font-size: 16pt;
+    font-weight: normal;
+    opacity: .8;
+    /* text-transform: uppercase; */
+    margin-top: 20px;
+}
+
+.school>.t2 {
+    font-size: 12;
+}
+
+label {
+    color: white;
+}
+
+hr {
+    color: white;
+    /* font-size: 15pt; */
+}
+
+.cs {
+    font-size: 30pt;
+    color: #004085;
+    font-family: 'Abel', sans-serif;
+}
+
+.school-photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 15%;
+}
+
+.about {
+    background: rgba(0, 0, 0, 0.6);
+    /* background: white; */
+    /* padding: 25px 200px 25px 200px; */
+    position: relative;
+    display: block;
+    /* z-index: 1; */
+    color: white;
+    text-align: center;
+}
+
+.about::after {
+    background-color: white;
+    content: '';
+    background-image: url(/static/vibrations_app/images/purdue-back.jpg);
+    /* background-size: 100%; */
+    background-size: cover;
+    /* background-position: right; */
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.about p {
+    float: left;
+    font-family: 'Abel', sans-serif;
+    font-size: 20pt;
+}
+
+.grad {
+    width: 300px;
+    height: 400px;
+    float: left;
+    border: 5px solid white;
+    margin: 0px 50px 0px 0px;
+    box-shadow: 5px 5px 35px;
+}
+
+#bw {
+    font-family: wilderness;
+    font-size: 50pt;
+    text-align: center;
+}
+
+.contact-background {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: block;
+    position: relative;
+    /* z-index: 0; */
+}
+
+.contact-background::after {
+    content: '';
+    background-image: url(/static/vibrations_app/images/am_bottom.jpg);
+    background-repeat: no-repeat;
+    background-size: top center;
+    background-position: ;
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.a {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: block;
+    position: relative;
+}
+
+.a::after {
+    content: '';
+    background: url(/static/vibrations_app/images/am_bottom.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1
+}
+
+.sexy-line {
+    width: 90%;
+    height: 3px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), white, rgba(0, 0, 0, 0.7));
+    padding: 0px 100px 0px 100px;
+}
+
+.contact-right {
+    color: white;
+    /* padding: 75px 50px 25px 25px; */
+}
+
+.contact-right h1 {
+    font-family: Wilderness;
+    /* letter-spacing: .7em; */
+    font-size: 150pt;
+    font-weight: normal;
+    /* opacity: .8; */
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    /* border-bottom: white 3px solid; */
+}
+
+.contact-right h4 {
+    font-family: 'Abel', sans-serif;
+    letter-spacing: .7em;
+    font-size: 20pt;
+    font-weight: normal;
+    /* opacity: .8; */
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.contact-right p {
+    font-family: 'Abel', sans-serif;
+    letter-spacing: .7em;
+    font-size: 12pt;
+    font-weight: normal;
+    /* opacity: .8; */
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.contact-right a:link {
+    color: white;
+}
+
+.contact-right a:visited {
+    color: white;
+}
+
+.contact-right a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* .contact-background::after {
+    content: '';
+    background-image: url('/static/profile_app/images/background/black-keyboard.jpeg');
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1
+} */
+
+#contact {
+    width: 100%;
+    /* height: 535px; */
+    /* border-image-slice: 20; */
+    /* background-size:cover; */
+    color: white;
+    background-position: absolute;
+    background-size: cover;
+    /* margin-top: 300px; */
+    /* opacity: 0.7; */
+    padding: 80px;
+    margin-bottom: auto;
+    text-align: center;
+    /* border-right: 5px solid white */
+}
+
+#scontct {
+    /* position: absolute; */
+    width: 100%;
+    /* text-align:center; */
+    /* top: 6vh; */
+    /* margin-bottom: 50px; */
+    color: #fff;
+    font-family: Wilderness, sans-serif;
+    /* letter-spacing: .7em; */
+    font-size: 150pt;
+    font-weight: normal;
+    /* opacity: .8; */
+    text-transform: uppercase;
+    /* margin-l claeft: 530px; */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.clist {
+    height: 700px;
+    width: 100%;
+    padding: 0px 0px 0px 50px;
+    /* border-left: white 3px solid; */
+    font-family: 'Source Sans Pro', sans-serif;
+}

@@ -1,0 +1,271 @@
+ {% extends 'vibrations_app/base.html' %} {% block body %} {% load staticfiles %}
+
+<div class="container-fluid">
+    <div class="row home-back">
+        <div class="col-sm-12" style="padding: 50px;">
+            <div class="row profile" style="margin: 0;">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-6" style="color: white">
+                            <div class="row order-2">
+                                <div class="col-sm-12">
+                                    <img class="" id="pro-pic" src="{% static 'vibrations_app/images/amanie_profile.jpg' %}" alt="">
+                                </div>
+                            </div>
+                            <div class="row order-1">
+                                <div class="col-sm-12 text-center">
+                                    <h1 class="name">Amanie Foster</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 pro-text ">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img src="{% static 'vibrations_app/images/flower_logo.png' %}" alt=""> </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h1>Business Development Manager</h1>
+                                    <h4 id="bw">Black and White with a Splash of Color</h4>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid about">
+    <section class="row ">
+        <div class=" col-sm-12 ">
+            <h1 class="fam">About</h1>
+
+            <p>
+                <img class="grad" src="{% static 'vibrations_app/images/grad.jpg' %}" alt=""> &emsp;Alumni of Purdue University Northwest located in Hammond, IN. During my college career I struggled
+                to find a path that would be beneficial to not only my educational interests but also to find interests that
+                nourished my being as an individual. I decided to major in General Communications with minors in both Advertising
+                and Visual Communications.
+                <br>
+                <br> &emsp;I chose this route because I love to communicate and articulate how I feel about various issues of
+                our world! Eventually further into my college career, I developed a love for art that I could not wait to
+                express on canvas. During my third year, I learned for to express myself through Adobe Illustrator, Photoshop,
+                and InDesign. Also during this time, I was able to exercise my leadership skills as I moved up the ladder
+                quickly at Lucky Brand Jeans.
+                <br>
+                <br> &emsp;There I learned how to SELL, STRATEGIZE, AND LEAD. Soon I became a top seller in my store; quickly
+                pushing me to a top performing manager. Within a year I had gained product knowledge about the retail industry
+                and sales but I also grew personally.
+                <br>
+                <br> &emsp;I founded a non-for-profit organization called Heavy Hearts Movement, which caters to communities
+                who may or may not be underserved, but in need. Initiatives that my organization has taken part in is a street
+                cleaning in Broadview, IL as well as a water drive in East Chicago, IN serving over 75 families to water.
+                <br>
+                <br> &emsp;I have also participated in a docu-series called Another Life dedicated to people of Chicago who lose
+                close loved ones to Chicago gun violence. There is so much that I have achieved in my lifetime so far. As
+                a recent college graduate, I execute and explore options to help not only better myself but those around
+                me. The current position I hold is at DataMine Web Solutions, Internet Marketing, and Branding as a business
+                development manager. I hope to continue to grow and develop as much as I can during my time here and where
+                ever else God leads.
+            </p>
+        </div>
+        <div class="sexy-line sexy1"></div>
+    </section>
+    <div class="row" style="padding: 50px;">
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-12" id="education">
+                    <h1>Education</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12 school">
+                    Purdue University Northwest-
+                    <span class="city">Hammond, IN</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <img class="school-photo" src="{% static 'vibrations_app/images/purdue.gif' %}" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 study">
+                    BACHELOR OF LIBERAL ARTS UNDERGRADUATE DEGREE
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 desc">
+                    <ul style="list-style: none; ">
+                        <li>Major: General Communications</li>
+                        <li>Minor: Visual Communications and Advertising</li>
+                        <li>Cumulative GPA 3.0</li>
+                    </ul>
+                    <a href="https://linkedin.com/in/amaniefoster"><i style="font-size: 4em" class="fab fa-linkedin-in"></i></a><br>
+                    <small style="color: white;">check out my linkedin page to see more!     </small>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid band">
+    <div class="row">
+        <div class="col-sm-12 media-title">
+            <h1>Good Vibrations Entertainment</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12" style="padding: 0px; margin-left: auto; margin-right: auto; display: block">
+
+                <div id="carousel" style="padding: 0px;" class="col-sm-12 carousel slide frontpage-slide" data-ride="carousel">
+                    <!-- <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol> -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="{% static 'vibrations_app/images/boatparty1.jpg' %}" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="{% static 'vibrations_app/images/boatparty2.jpg' %}" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="{% static 'vibrations_app/images/boatparty6.jpg' %}" alt="Third slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+                
+               <div class="row">
+
+                <div class="col-sm-12 media-txt">
+                    <!-- <h1>Good Vibrations</h1> -->
+                    <img class="d-none d-md-block" id="marketing" src="{% static 'vibrations_app/images/services.png'%}" alt="">
+                    <p>Good Vibrations Communications (herein after referred to as GV) is a limited licensed corporation. Created as a multifaceted brand specializing in a strategic marketing approach. Focused on creating and distributing consistent, valuable, and relevant content to attract and retain a clearly defined audience. Specialties of Good Vibrations consists of communal and artistic content to relay messages to consumers of brands and products that businesses offer.
+                        GV is created to be a consistent artistic maneuver of a brand’s creative direction and goals in attracting and keeping loyal consumers throughout the longevity of their business. Content created for businesses provide a clear pathway to articulate the means behind the offerings of that business in an artistic, creative manner.
+                        Through the services of Good Vibrations Communications, there is an obligation as a company to provide authenticity to the companies we service. People buy people. Once there is a connection to the brand because of the authentic nature it possess, there is large probability in growing a business’s consumer base.
+                        GV as a company and brand hopes to drive profitable consumer action towards the businesses we service. In doing so, we create your brand’s “IMAGE” through graphic design, content marketing, and event planning. Each business is given a specific strategy on how to brand their business and is provided with artistic direction on how to make their business excel in their business category.
+                        </p>
+                        <p>Objectives</p>
+                        <ul>
+                        <li>Understand companies values and beliefs (Soul of the business)</li>
+                        <li>Identify core consumers of brands and/or products (Target market)</li>
+                        <li>Navigate attraction to companies core consumers (Artistic content marketing)</li>
+                        <li>Connect to companies consumers through specialized brand (Event Planning)</li>
+                    </ul>
+                        <p>The uniqueness of Good Vibrations Communications is the ability to bring awareness to the creativeness inside each entrepreneur and company. We plan to create an unrepeatable reputation of the company by giving the consumer the ability to: understand, identify, and connect to companies through art and content marketing. The overall goal of GV is to provide companies with a brand that is easily distinguished from others because authenticity is extremely rare in our business world.</p>
+                </div>
+        </div>
+            <div class="col-sm-12" class="row">
+                <video  controls>
+                    <source src="{% static 'vibrations_app/videos/live.mp4' %}">
+                </video>
+            </div>
+
+
+
+        
+
+    </div>
+</div>
+<div class="container-fluid fashion ">
+    <div class="row ">
+        <div class="col-sm-12">
+            <h1 class="fam" style="text-align: center; margin: 50px;">Apparel</h1>
+        </div>
+        <div class="col-sm-6 to-do">
+            <h5>Jacket Designs</h5>
+            <img src="{% static 'vibrations_app/images/demJacket.png'%}" width="400" alt="">
+            <div class="cs">Coming Soon!</div>
+            <!-- <a class="view" href="">View More</a> -->
+        </div>
+
+        <div class="col-sm-6 to-do">
+            <h5>T-Shirts Designs</h5>
+            <img src="{% static 'vibrations_app/images/disTshirt.png'%}" width="400" alt="">
+            <div class="cs">Coming Soon!</div>
+            <!-- <a class="view" href="">View More</a> -->
+
+        </div>
+        <div class="row">
+            <div class="col-sm-12 fashion-text">
+                <div class="row" style="padding:10px !important;">
+                    <div class="col-sm-12 text-center">
+                        <h1>Fashion Designs by
+                            <span style="display: inline; margin-left: 100px;">Amanie Foster</span>
+                        </h1>
+                    </div>
+                    <!-- <div class="col-sm-12">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, hic!
+                        </p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <div class="container-fluid">
+    <div class="row contact-background">
+        <div class="col-sm-12 contact-right">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="clist">
+                        <h1>Contact</h1>
+                        <h4>Phone</h4>
+                        <p>
+                            <a href="tel:3128138221">
+                                <i class="fa fa-phone" style="color: white;"></i>(312) 813-8221</a>
+                        </p>
+                        <h4>Email</h4>
+                        <p class="small">
+                            <a href="mailto:amaniefoster@gmail.com">
+                                <i class="fa fa-envelope" style="color: white; "></i>amaniefoster@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+<script>
+    var modal = document.getElementById('vibe');
+    var btn = document.getElementById('btn-start');
+    var span = document.getElementsByClassName('close')[0];
+
+    btn.onclick = function () {
+        modal.style.display = "block";
+    };
+    span.onclick = function () {
+        modal.style.display = "none";
+    };
+    window.onclick = function () {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        };
+    };
+</script> {% endblock %}

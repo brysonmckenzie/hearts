@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+{% load i18n staticfiles mezzanine_tags blog_tags %}
+
+{% block meta_title %}{% trans "Home" %}{% endblock %}
+{% block title_wrapper%}
+{% endblock %}
+{% block all_content %}
+{% block left_wrapper%}
+{% endblock %}
+
+{% block main_wrapper%}
+
+{% endblock %}
+
+{% block right_wrapper%}
+{% endblock %}
+
+	<div id="headerwrap">
+	    <div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div id="headercontent">
+						<h1>Heavy Hearts Movement</h1>
+						<h4>help heal while we are still &nbsp;&nbsp; healing!</h4>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<img id="hwback"  src="{% static  'img/portfolio/hearts_logo.png'%}" alt=""> 
+				</div>
+			</div><!-- /row -->
+	    </div> <!-- /container -->
+	</div><!-- /headerwrap -->
+
+	 
+	<!-- *****************************************************************************************************************
+	 MIDDLE CONTENT
+	 ***************************************************************************************************************** -->
+
+	 <div class="container mtb">
+	 	<div class="row">
+	 		<div class="col-lg-4 col-lg-offset-1">
+				 <img src="{% static '../img/portfolio/profile.jpg' %}" alt="">
+		 		<h4 class="title2">Heavy Hearts</h4>
+		 		<p id="hhcontent">One unique characteristic of Heavy Hearts Movement is the unprecedented passion and support that power our initiatives is largely represented by the “Millennial Generation”, and rightfully so, considering data shows, this population is adversely impacted by gun violence more than any other. Every standing member of our organization has a driven testimony behind why it is important to make a difference in our communities. The way we go about touching and reaching our people is through experience and having the understanding that we have all been in a place of mourning and discouragement. We hope to bring hope, life, and love back into our village.</p>
+ 				<p><br/><a href="about.html" class="btn btn-theme">More Info</a></p>
+	 		</div>
+	 		
+	 		<!-- <div class="col-lg-3">
+	 			<h4>Frequently Asked</h4>
+	 			<div class="hline"></div>
+	 			<p><a href="#">How cool is this theme?</a></p>
+	 			<p><a href="#">Need a nice good-looking site?</a></p>
+	 			<p><a href="#">Is this theme retina ready?</a></p>
+	 			<p><a href="#">Which version of Font Awesome uses?</a></p>
+	 			<p><a href="#">Free support is integrated?</a></p>
+	 		</div> -->
+	 		{% blog_recent_posts 5 as recent_posts %}
+	 		{% if recent_posts %}
+	 		<div class="col-lg-6 recent">
+	 			<h4>{% trans "Recent Posts" %}</h4>
+	 			<div class="hline"></div>
+	 			{% for recent_post in recent_posts %}
+					<p>	<a href="{{ recent_post.get_absolute_url }}">{{ recent_post.title }}</a></p>
+	 			{% endfor %}
+	 			
+	 		</div>
+	 		{% endif %}
+	 		
+	 	</div><! --/row -->
+	 </div><! --/container -->
+	 
+
+	 <div id="cwrap">
+		 <div class="container">
+			 <div class="row">
+				 <div class="col-md-12">
+						<h3 style="text-align: middle;" class="title1">Artwork</h3>
+				 </div>
+			 </div>
+		 	<div class="row centered" style="margin-bottom: 40px;">
+			 	<div id="art-back">
+			 	<div class="col-lg-3 col-md-3 col-sm-3 ">
+			 		<img src="{% static "img/artwork/artwork1.png" %}" class="img-responsive art">
+			 	</div>
+			 	<div class="col-lg-3 col-md-3 col-sm-3">
+			 		<img src="{% static "img/artwork/artwork2.png" %}" class="img-responsive art">
+			 	</div>
+			 	<div class="col-lg-3 col-md-3 col-sm-3">
+			 		<img src="{% static "img/artwork/artwork3.png" %}" class="img-responsive art">
+			 	</div>
+			 	<div class="col-lg-3 col-md-3 col-sm-3">
+			 		<img src="{% static "img/artwork/artwork4.png" %}" class="img-responsive art">
+			 	</div>
+			 
+		 	<! --/row -->
+		 	<div class="row centered" style="margin-top: 500px !important;">
+			 	
+			 	<div class="col-lg-3 col-md-3 col-sm-3">
+			 		<img src="{% static "img/artwork/artwork5.png" %}" class="img-responsive art">
+			 	</div>
+			 	<div class="col-lg-3 col-md-3 col-sm-3">
+			 		<img src="{% static "img/artwork/artwork6.png" %}" class="img-responsive art" style="height: 200px !important;">
+			 	</div>
+			 	<div class="col-lg-3 col-md-3 col-sm-3">
+			 		<img src="{% static "img/artwork/artwork7.png" %}" class="img-responsive art">
+			 	</div>
+			 	<div class="col-lg-3 col-md-3 col-sm-3">
+			 		<img src="{% static "img/artwork/artwork8.png" %}" class="img-responsive art">
+			 	</div>
+			</div>
+		 	</div><! --/row -->
+		 </div><! --/container -->
+	 </div><! --/cwrap -->
+{% endblock %}
